@@ -1,7 +1,7 @@
 package arrayPrograms;
 
 //Sort the array using selection sort
-// Selection sort : - 1 Swap in my Iteration
+// Selection sort : - 1 Swap in 1 Iteration
 public class SortArraysSelectionSort {
 	public static void printArray(int arr[]) {
 		for(int i =0;i<arr.length;i++) {

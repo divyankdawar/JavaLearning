@@ -18,7 +18,7 @@ public class MinMaxArray {
 		*/
 		//Smart programming way
 		// To find the minimum value
-		int a[] = {4,7,1,9,2};
+		int a[] = new int[]{4,7,1,9,2};
 		int max = a[0];
 		for(int i = 1;i<a.length;i++) {
 			if(a[i]>max) {

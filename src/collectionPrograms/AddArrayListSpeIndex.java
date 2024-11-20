@@ -13,7 +13,7 @@ public class AddArrayListSpeIndex {
 
 		// below line is adding element at index 2
 		al.add(2,"Guava");
-		al.remove(2);
+//		al.remove(2);
 		int a = al.size();
 		System.out.println(a);
 		System.out.println(al);

@@ -7,7 +7,7 @@ import java.util.Collections;
 public class ArrayListDescendingSort {
 	public static void main(String args[]) {
 
-		ArrayList<String> arrList = new ArrayList();
+		ArrayList<String> arrList = new ArrayList<String>();
 		arrList.add("Apple");
 		arrList.add("Banana");
 		arrList.add("Pear");
@@ -29,4 +29,12 @@ public class ArrayListDescendingSort {
 	}
 }
 
+/*
+The line Collections.sort(arrList, Collections.reverseOrder()); does the following:
 
+Collections: Accesses the utility class that contains static methods for collections.
+sort: Calls the sort method to sort the list.
+arrList: The list you want to sort.
+Collections.reverseOrder(): Passes a comparator to the sort method that sorts the list in reverse (descending) order
+
+*/

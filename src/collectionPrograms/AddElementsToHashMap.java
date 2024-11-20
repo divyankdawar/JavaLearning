@@ -8,14 +8,19 @@ import java.util.HashSet;
 public class AddElementsToHashMap {
 	public static void main(String args[]) {
 
-		HashMap<Integer,String> hashmap = new HashMap<Integer,String>();
-		//	HashSet<Integer> al = new HashSet<Integer>();
 
+		HashMap<Integer,String> hashmap = new HashMap<Integer,String>();
+		
+		//	HashSet<Integer> al = new HashSet<Integer>();
 		hashmap.put(1, "Divyank is successful");
 		hashmap.put(2, "Divyank owns a Luxury car");
 		hashmap.put(3, "Divyank owns Mercedes MayBach");	
 
-		System.out.println(hashmap);
+//		System.out.println(hashmap);
+		
+		for(Integer key : hashmap.keySet()) {
+			System.out.println("Key: " + key + ",Value" +  hashmap.get(key));
+		}
 
 
 		}

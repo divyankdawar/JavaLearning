@@ -19,21 +19,13 @@ public class TreeMapIteratorExample {
 		treemap.put("Key4", "Papaya");
 		treemap.put("Key5", "Banana");
 
-		//Get set of entries
-		Set set = treemap.entrySet();
-
-		//Get iterator
-		Iterator it = set.iterator();
-
-		//Show TreeMap elements
 		System.out.println("Treemap Contains");
-		while(it.hasNext()) {
-			Map.Entry pair = (Map.Entry)it.next();
-		
-			System.out.println("Key is : " + pair.getKey() + "and");
-			System.out.println("Value is: " + pair.getValue());
+		for(Map.Entry<String, String> entry : treemap.entrySet()) {
+
+			System.out.println("Key is " + entry.getKey() + "and value is " + entry.getValue());
 		}
 	}
-
-
 }
+
+
+

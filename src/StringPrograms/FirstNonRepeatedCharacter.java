@@ -1,33 +1,29 @@
 package StringPrograms;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-
-//#5: Find First Non Repeated character
-
 public class FirstNonRepeatedCharacter {
 	public static void main(String args[]) {
-		String str = "programming";
-
-		Map<Character,Integer> map = new LinkedHashMap<Character,Integer>();
-		// maintains insertion order...
+		String str = "pprroommiiomal";
+		char arr[] = str.toCharArray();	
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
 		int count = 1;
-		System.out.println(str.length());
-		for(int i=0;i<str.length();i++) {
-			if(!map.containsKey(str.charAt(i))) {
-				map.put(str.charAt(i), count);
+
+
+		for(int i =0;i<arr.length;i++) {
+			if(map.containsKey(arr[i])) {
+				map.put(arr[i], map.get(arr[i])+1);	
 			}
 			else {
-				map.put(str.charAt(i), map.get(str.charAt(i))+1);
+				map.put(arr[i],count);
 			}
 		}
-
-		//Printing the first non-repeated character from map
-
+		//keyset() :-  to create a set out of the key elements contained in the hash map
+		//Printing Duplicates
 		for(Entry<Character,Integer> entry : map.entrySet()) {
-			
+
 			if(entry.getValue()==1) {
 				System.out.println("The first non repeated character is : " + entry.getKey());
 				break;  
@@ -35,3 +31,11 @@ public class FirstNonRepeatedCharacter {
 		}
 	}
 }
+/*
+ * Purpose of entrySet()
+The entrySet() method is useful when you need to access both keys and values of a map simultaneously. It provides a way to iterate through the map entries and perform operations on both keys and values.
+ * 
+ * 
+ * 
+ */
+

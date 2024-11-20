@@ -10,8 +10,14 @@ public class StringReverseExample {
         String original1 = sc.next();
 //		String original = "DivyankDawar";
 		String reverse = new StringBuffer(original1).reverse().toString();
-        System.out.println("Original String is" + original1);
-        System.out.println("Reversed String is" + reverse);
+        System.out.println("Original String is " + original1);
+        System.out.println("Reversed String is " + reverse);
 	}
 
 }
+
+/*
+String Input: Note that sc.next() reads the next token, which is a word delimited by whitespace. If you want to read the entire line including spaces, use sc.nextLine() instead.
+
+
+*/

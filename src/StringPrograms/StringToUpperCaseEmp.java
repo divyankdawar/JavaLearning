@@ -11,7 +11,7 @@ public class StringToUpperCaseEmp {
 		String abc = "Divyank Dawar is very good at coding";
 		String bc = abc.substring(1, 10);
 		System.out.println(bc);
-		
+//Yes, the substring method in Java takes a start index (inclusive) and an end index (exclusive). 		
 
 	}
 

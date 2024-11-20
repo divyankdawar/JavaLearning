@@ -21,12 +21,12 @@ public class HashMapSortByKeyEasy {
 		unsortedMap.put("guava", "guava");
 
 		for(Map.Entry<String, String> entry: unsortedMap.entrySet()) {
-			System.out.println("Unsorted Key Value " + entry.getKey());
+			System.out.println("Unsorted Key Value = " + entry.getKey());
 		}
 		
 		Map<String,String> treeMap = new TreeMap<String,String>(unsortedMap);
 		for(Map.Entry<String, String> entry : treeMap.entrySet()) {
-			System.out.println("Sorted key value " + entry.getKey());
+			System.out.println("Sorted key value = " + entry.getKey());
 		}
 	}
 }

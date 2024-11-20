@@ -1,36 +1,51 @@
 package StringPrograms;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeMap;
 
-public class JustToPracticeString {
+
+class JustToPracticeString {
 	public static void main(String args[]) {
-		String str = "Programming";
-		char arr[] = str.toCharArray();
-		Map<Character,Integer> map = new HashMap<Character,Integer>();
-		int count = 1;
+		String input = "My Name is Divyank";
+		String words[] = input.split(" ");
 		
-		for(int i=0;i<arr.length;i++) {
-			if(!map.containsKey(arr[i])) {
-				map.put(arr[i], count);
-			}
-			else 
-			{
-				map.put(arr[i], map.get(arr[i])+1);
-			}	
+		StringBuilder reversedString = new StringBuilder();
+		for(String word : words) {
+			reversedString.append(new StringBuilder(word).reverse()).append(" ");
+			
 		}
-		for(Character key : map.keySet()) {
-			if(map.get(key)>1) {
-				System.out.println(key + " : " + map.get(key));
-			}
-		}
-
-
+		
+		String result = reversedString.toString().trim();
+		System.out.println(result);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
