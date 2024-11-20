@@ -4,7 +4,7 @@ package arrayPrograms;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class reverseArray {
+public class reverseArrayList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

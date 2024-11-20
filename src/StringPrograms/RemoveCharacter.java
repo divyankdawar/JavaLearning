@@ -20,6 +20,6 @@ public class RemoveCharacter {
 	String abc = str.replace("This","");
     System.out.println(abc);
 		 */
-	}
+	}	
 
 }

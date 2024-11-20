@@ -1,6 +1,7 @@
 package arrayPrograms;
 
 //Insertion Sort 
+//Divide the array into two parts sorted parts and unsorted part
 public class SortArrayInsertionSort {
 
 	public static void printArray(int arr[]) {
@@ -15,12 +16,17 @@ public class SortArrayInsertionSort {
 
 		//insertion sort
 		for(int i=1;i<arr.length;i++) {
+			//The element we pick and then check with the sorted array 
+			
 			int current =arr[i];
 			int j= i-1;
+			//We are using J to track the sorted part 
+			//If the condition is specified then uske liye space banayenge
 			while(j>=0 && current <arr[j]) {
 				arr[j+1] = arr[j];
 				j--;
 			}
+			//placement
 			arr[j+1] = current;
 		}
 		printArray(arr);

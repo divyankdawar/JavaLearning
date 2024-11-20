@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class aosToOutput {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Approach 1
 		String[] greetings = new String[3];
 		greetings[0] = "This is the greeting";
 		greetings[1] = "for all the readers from";
@@ -15,7 +15,7 @@ public class aosToOutput {
 			System.out.println(greetings[i]); 
 
 		}
-
+		// Approach 2
 		String[] arr = new String[] {"Tutorial","Of","Java"};
 		System.out.println(Arrays.toString(arr));
 

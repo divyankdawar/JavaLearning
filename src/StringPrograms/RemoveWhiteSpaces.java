@@ -7,8 +7,8 @@ public class RemoveWhiteSpaces {
 		
 		//Remove all white spaces using regex
 		str1 = str1.replaceAll("\\s", "");
-		System.out.println("String after removing the white spaces " + str1);
-		
+		System.out.println("String after removing the white spaces : - " + str1);
+		//\\s is a regex that matches any whitespace character (spaces, tabs, line breaks)
 	}
 
 }

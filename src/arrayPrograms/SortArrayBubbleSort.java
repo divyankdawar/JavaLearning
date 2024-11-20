@@ -1,6 +1,8 @@
 package arrayPrograms;
 
 // Sort the array using bubble sort
+//In bubble sort when elements are sorted first is compared and then sent to last position
+
 public class SortArrayBubbleSort {
 	public static void printArray(int arr[]) {
 		for(int i=0;i<arr.length;i++) {

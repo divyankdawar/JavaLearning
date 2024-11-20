@@ -4,7 +4,7 @@ class Animal {
 		System.out.println("The Animal Speaks");
 	}
 }
-class Dog extends Animal {
+class Dogs extends Animal {
 
 }
 public class methodOverriding {
@@ -13,7 +13,7 @@ public class methodOverriding {
 		// Method overriding = Declaring a method in sub class, 
 		//                     which is already present in parent class 
 		//                     done so that a child class can give its own implementation
-		Dog dog = new Dog();
+		Dogs dog = new Dogs();
 		dog.speak();
 
 
