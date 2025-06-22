@@ -20,23 +20,25 @@ import java.util.TreeMap;
 
 
 class JustToPracticeString {
-	public static void main(String args[]) {
-		String input = "My Name is Divyank";
-		String words[] = input.split(" ");
+
+	public static void main(String args[])  {
 		
-		StringBuilder reversedString = new StringBuilder();
-		for(String word : words) {
-			reversedString.append(new StringBuilder(word).reverse()).append(" ");
-			
-		}
-		
-		String result = reversedString.toString().trim();
-		System.out.println(result);
+            int a[] = {5,6,7,8,9,71,1,3};
+            int temp;
+            for(int i=0;i<a.length;i++) {
+            	for(int j=i+1;j<a.length;j++) {
+            		if(a[i]<a[j]) {
+            			temp = a[i];
+            			a[i] = a[j];
+            			a[j] = temp;
+                 
+            		}
+            	}
+            }
+            
+           System.out.println("Second largest element is " + a[1]);             
 	}
 }
-
-
-
 
 
 
